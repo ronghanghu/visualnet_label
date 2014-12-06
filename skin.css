@@ -1,0 +1,256 @@
+/* CSS Document */
+.middlePart { /*中间区域，相对网页绝对定位*/
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 705px;
+	height: 735px;
+}
+
+.imageSection { /*图像区域的样式（包括滚动条），相对middlePart绝对定位*/
+	border: thick;
+	border-width: 2px;
+	position: absolute;
+	left: 0px;
+	top: 28px;
+	width: 700px;
+	/*imageSection的宽度，修改这个量的时候必须同时修改label.js中的imageAreaWidth*/
+	height: 700px;
+	/*imageSection的高度，修改这个量的时候必须同时修改label.js中的imageAreaHeight*/
+	overflow-x: scroll;
+	overflow-y: scroll;
+	z-index: 1;
+	background-color: #666;
+	
+	/*修改imageSection的border时必须同时修改drag.js中的border*/
+	border-bottom: #989898 2px solid;
+	border-left: #FFF 2px solid;
+	border-right: #989898 2px solid;
+	border-top: #FFF 2px solid;
+}
+
+.loadingTxt {
+	position: absolute;
+	left: 150px;
+	top: 300px;
+	font-size: 44px;
+	color: #FFF;
+	z-index: 5;
+}
+
+.buttonSection { /*按钮区域的样式（浮在图像上），相对middlePart绝对定位*/
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	height: 25px;
+	z-index: 2;
+}
+
+.subSection {
+	background-color: #EEE;
+	border-bottom: #989898 1px solid;
+	border-left: #FFF 1px solid;
+	border-right: #989898 1px solid;
+	border-top: #FFF 1px solid;
+	margin: 5px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:5px;
+}
+
+.label { /*整个landmark的样式*/
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	visibility: hidden;
+	width: 20px;
+	height: 20px;
+	z-index: 4;
+}
+
+.landmark { /*landmark小圆点和文字的样式*/
+	font-size: 8pt;
+	font-family: Arial;
+}
+
+.image {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+
+.lvButton {
+	width: 240px;
+	height: 50px;
+	text-align: left;
+	border-left: #FFF 2px solid;
+	border-top: #FFF 2px solid;
+	border-right: #989898 2px double;
+	border-bottom: #989898 2px double;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.dvButton {
+	width: 220px;
+	height: 25px;
+	text-align: left;
+	border-left: #FFF 2px solid;
+	border-top: #FFF 2px solid;
+	border-right: #989898 2px double;
+	border-bottom: #989898 2px double;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.bigButton {
+	width: 240px;
+	height: 90px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.zoomButton {
+	width: 100px;
+	height: 23px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.smallButton {
+	width: 88px;
+	height: 23px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.division {
+	text-align: center;
+	display:none;
+}
+
+body {
+	background-image: url(images/bg.gif);
+	font-size: 9pt;
+	font-family: "Microsoft YaHei",'微软雅黑','Hiragino Sans GB',"Lucida Sans Unicode",verdana,geneva,sans-serif;
+}
+
+.pageTable {
+	background-color: #CCC;
+	border-bottom: #989898 3px solid;
+	border-left: #FFF 3px solid;
+	border-right: #989898 3px solid;
+	border-top: #FFF 3px solid;
+	min-width: 840px;
+	min-height: 600px;
+}
+
+a {
+	text-decoration: none;
+} /* 链接无下划线,有为underline */
+a:link {
+	color: #000000;
+} /* 未访问的链接 */
+a:visited {
+	color: #333333;
+} /* 已访问的链接 */
+a:hover {
+	color: #ae0927;
+} /* 鼠标在链接上 */
+a:active {
+	color: #0000ff;
+} /* 点击激活链接 */
+input {
+	background-color: #2D9DF0;
+	color: #FFF;
+	font-size: 9pt;
+	font-family: "Microsoft YaHei",'微软雅黑','Hiragino Sans GB',"Lucida Sans Unicode",verdana,geneva,sans-serif;;
+}
+
+select {
+	background-color: #2D9DF0;
+	color: #FFF;
+	border-left: #FFF 2px solid;
+	border-top: #FFF 2px solid;
+	border-right: #989898 2px double;
+	border-bottom: #989898 2px double;
+	font-family: "Microsoft YaHei",'微软雅黑','Hiragino Sans GB',"Lucida Sans Unicode",verdana,geneva,sans-serif;
+}
+
+.logoSection {
+	background-color: #EEE;
+	margin: 5px;
+	padding-bottom: 4px;
+	border-bottom: #989898 2px solid;
+	border-left: #FFF 2px solid;
+	border-right: #989898 2px solid;
+	border-top: #FFF 2px solid;
+}
+
+.personButton {
+	width: 60px;
+}
+
+.introSection {
+	background-color: #EEE;
+	margin: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 4px;
+	border-bottom: #989898 1px solid;
+	border-left: #FFF 1px solid;
+	border-right: #989898 1px solid;
+	border-top: #FFF 1px solid;
+}
+
+.keySection {
+	height: 50px;
+	width: 400px;
+	background-color: #000;
+	position: absolute;
+	visibility: hidden;
+	z-index: 10;
+	font-size: 36px;
+	color: #FFF;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.bigTextInput {
+	width: 200px;
+	height: 30px;
+	font-size: 14px;
+}
+.bigSelect {
+	width: 220px;
+	height: 35px;
+	font-size: 14px;
+}
+
+.bigText {
+	text-align: center;
+	font-size: 24px;
+	color: #2E2E2E;
+}
+
+.midText {
+	font-size: 15px;
+	color: #2E2E2E;
+}
+
+.buttomText {
+	text-align: center;
+	font-size: 20px;
+	color: #2E2E2E;
+}
+
+.registerButton {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	top: 130px;
+}

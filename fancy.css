@@ -1,0 +1,21 @@
+/* CSS Document */
+.overlay {
+	background-color:#000;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0.7;
+	display:none;
+	z-index:20;
+}
+
+.fancy {
+	position:absolute;
+	display:none;
+	z-index:21;
+	background-color: #CCC;
+	border-bottom: #989898 3px solid;
+	border-left: #FFF 3px solid;
+	border-right: #989898 3px solid;
+	border-top: #FFF 3px solid;
+}
